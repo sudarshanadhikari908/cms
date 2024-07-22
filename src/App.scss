@@ -1,0 +1,30 @@
+@import './assets/styles/styles.scss';
+.crossIcon {
+    font-size: 20px;
+}
+
+.crossIcon:hover {
+    cursor: pointer;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+//For giving red asterisk in required field in form May put this style in another file later
+.require:after {
+    content:" *";
+    color: red;
+  }
+
+.w-78{
+    width: 78%;
+  }
+
+// Email template tiny mce style later put this css in appropriate location  
+.tox-tinymce{
+    margin-left: 5px;
+}

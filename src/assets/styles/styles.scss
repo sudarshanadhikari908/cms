@@ -1,0 +1,32 @@
+@import './abstract/variables',
+'./abstract/mixins';
+
+@import './components/buttons',
+'./components/sidebar',
+'./components/pagination',
+'./components/tables',
+'./components/search-filter',
+'./components/card',
+'./components/animations',
+'./components/form',
+'./components/modal';
+
+@import './pages/users',
+'./pages/roles',
+'./pages/customers',
+'./pages/auth';
+
+@import './layouts/header';
+
+body {
+    color: $text-color;
+    font-family: $font-roboto;
+}
+
+p {
+    margin: 0;
+}
+
+.theme-text {
+    color: $theme-color !important;
+}

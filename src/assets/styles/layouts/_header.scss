@@ -1,0 +1,35 @@
+.profile-link {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px !important;
+  border-radius: 10px;
+  background-color: rgb(229 229 229)
+}
+
+.navbar {
+  .dropdown-menu {
+    a {
+      color: #727374 !important;
+
+      &:active {
+        background-color: #f8f9fa;
+      }
+    }
+
+    button {
+      color: #727374 !important;
+
+      &:active {
+        background-color: #f8f9fa;
+      }
+    }
+  }
+}
+
+.content-header {
+  h1 {
+    @media (max-width: 853px) {
+      font-size: 1.5rem !important;
+    }
+  }
+}

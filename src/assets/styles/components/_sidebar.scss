@@ -1,0 +1,194 @@
+.sidebar {
+    padding: 0;
+
+    .nav {
+        &-link {
+            margin: 0;
+            width: 100% !important;
+            padding: 0.75rem 1rem;
+            color: #727374 !important;
+            border-radius: 0;
+
+            i {
+                font-size: $font-sm + 1 !important;
+                margin-right: 0.7rem !important;
+            }
+
+            .right {
+                top: 18px !important;
+            }
+
+            &:hover {
+                color: $theme-color  !important;
+            }
+        }
+
+        &-item {
+            &.active {
+                .nav-link {
+                    background: #17a2b81c;
+                    color: $theme-color  !important;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 3px;
+                        background: $theme-color;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            .nav-treeview {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.main-sidebar {
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+
+    .brand {
+        &-link {
+            border-bottom: 1px solid transparent;
+            padding: 1rem 0.5rem;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        &-image {
+            max-height: 35px;
+            margin: 0;
+        }
+
+        &-text {
+            font-family: 'Alata', sans-serif;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .brand-text {
+        display: none !important;
+    }
+}
+
+
+
+@media (min-width: 750px) {
+
+    .sidebar-open {
+        #sidebar-overlay {
+            display: none !important;
+        }
+    }
+
+    .sidebar-open,
+    .sidebar-open .main-sidebar::before {
+        margin-left: 250px !important;
+    }
+
+    .sidebar-mini.sidebar-collapse {
+
+        .main-sidebar,
+        .sidebar-mini.sidebar-collapse {
+            .main-sidebar::before {
+                margin-left: 0 !important;
+                width: 4.6rem !important;
+            }
+        }
+    }
+
+    .sidebar-mini.sidebar-collapse.layout-fixed {
+        .brand-link {
+            width: 4.6rem !important;
+        }
+    }
+
+    .sidebar-mini {
+
+        .nav-sidebar,
+        .sidebar-mini {
+            .nav-sidebar {
+
+                .nav-link,
+                .sidebar-mini {
+                    .nav-sidebar>.nav-header {
+                        white-space: nowrap !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-mini.sidebar-collapse {
+
+        .main-sidebar,
+        .sidebar-mini.sidebar-collapse {
+            .main-sidebar::before {
+                margin-left: 0 !important;
+                width: 4.6rem !important;
+            }
+        }
+    }
+
+    .sidebar-mini.sidebar-collapse {
+        .main-sidebar {
+            overflow-x: hidden !important;
+            margin-left: 0 !important;
+            width: 4.6rem !important;
+        }
+    }
+
+    .sidebar-mini {
+        .nav-sidebar {
+            .nav-link {
+                white-space: nowrap !important;
+            }
+
+        }
+    }
+
+    .sidebar-mini.sidebar-collapse {
+        .sidebar {
+            .nav-sidebar {
+                .nav-link {
+                    p {
+                        margin-left: -10px !important;
+                        -webkit-animation-name: fadeOut !important;
+                        animation-name: fadeOut !important;
+                        -webkit-animation-duration: .3s !important;
+                        animation-duration: .3s !important;
+                        -webkit-animation-fill-mode: both !important;
+                        animation-fill-mode: both !important;
+                        visibility: hidden !important;
+                        white-space: nowrap !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-mini.sidebar-collapse {
+        .brand-text {
+            display: none !important;
+        }
+    }
+
+    .sidebar-mini.sidebar-collapse {
+        .content-wrapper {
+            margin-left: 4.6rem !important;
+        }
+    }
+
+    .sidebar-mini.sidebar-collapse {
+        .main-header {
+            margin-left: 4.6rem !important;
+        }
+    }
+}

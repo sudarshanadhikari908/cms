@@ -1,0 +1,8 @@
+@mixin btn-theme {
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: $font-sm;
+    padding: 0.8rem 1.4rem!important;
+    border: 0;
+}

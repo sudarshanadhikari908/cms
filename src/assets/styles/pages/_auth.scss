@@ -1,0 +1,64 @@
+.auth-wrap {
+    .form-control {
+        font-size: $font-base;
+    }
+    .input-group {
+        &-text {
+            height: 42px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
+.otp-wrap {
+    input {
+        height: 50px;
+        width: 50px !important;
+        margin: 0 5px;
+        text-align: center;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        color: $text-color;
+        &:focus {
+            outline: 0;
+            border: 1px solid $theme-color;
+        }
+    }
+    & >div {
+        justify-content: center;
+    }
+    
+}
+.otp-wrap-error {
+    border: 1px solid rgb(230, 85, 85) !important;
+}
+
+.logo-name {
+    justify-content: center;
+    font-family: 'Alata', sans-serif;
+    .modal-title {
+        font-size: 30px;
+    }
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: $text-color;
+    margin: 10px 0;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #1b1c1e;
+        top: 12px;
+    }
+    span {
+        background: white;
+        z-index: 1;
+        padding: 0 5px;
+    }
+}

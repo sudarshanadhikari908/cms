@@ -1,0 +1,30 @@
+.system-table {
+  overflow-x: auto !important;
+
+  th {
+    border-top: none !important;
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+
+  td {
+    vertical-align: inherit !important;
+    border-top: none !important;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .th-acc {
+    width: 12%;
+  }
+  .social-icon {
+    font-size: 20px;
+    color: $btn-primary;
+  }
+}
+
+.td-ios {
+  display: flex;
+}
+
+.sn-th {
+  width: 70px;
+}
